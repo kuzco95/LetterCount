@@ -10,6 +10,8 @@ public class main {
 		System.out.println("Enter a string.");
 		String userText;
 		Scanner textIn = new Scanner(System.in);
+		
+		//make the string upper case for simplicity
 		userText = textIn.nextLine().toUpperCase();
 		textIn.close();	
 		counter(userText);
@@ -77,6 +79,7 @@ public class main {
 	}
 	
 	public static void printValues(int[] countArr, char [] letterArr) {
+		//this method prints the letters and their frequency in 4 columns
 		int col = 0;
 		int index;
 		System.out.print("\n");
